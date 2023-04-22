@@ -1,0 +1,256 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+html {
+  /* background-image: linear-gradient(#020c1b, #0a192f); */
+}
+.Typist {
+  position: absolute;
+  top: 3em;
+  left: 2em;
+  text-align: center;
+  font-size: 76px;
+  margin-top: -30px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body {
+  background-image: linear-gradient(#020c1b, #0a192f);
+  background-repeat: no-repeat;
+  height: 200vh;
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.textMain {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.Anubhav {
+  color: #64ffda;
+}
+
+/* blinking animation */
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+.cursor {
+  padding-left: 2px;
+  color: #64ffda;
+  animation: cursor-blink 1s linear infinite;
+}
+
+/* text part */
+.intro-subtitle {
+  font-size: 42px;
+  color: #8892b0;
+}
+.introDescription {
+  max-width: 40%;
+  font-size: 18px;
+  color: #8892b0;
+  word-spacing: 1px;
+  line-height: 1.5em;
+}
+.textpara {
+  position: absolute;
+  top: 19em;
+  left: 9.5em;
+}
+
+/* Mail part */
+.mailButton {
+  display: inline-block;
+  position: absolute;
+  top: 22em;
+  left: 7em;
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: "NTR", sans-serif;
+  padding: 10px 30px;
+  cursor: pointer;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+}
+.mailButton :hover {
+  padding: 0px 0px;
+  background-color: #e6f1ff40;
+}
+/* mail button */
+.mailButton a {
+  text-decoration: none;
+  color: #64ffda;
+}
+.MuiSvgIcon-root {
+  fill: #64ffda;
+  position: relative;
+  top: 1px;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.1rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  -moz-user-select: none;
+}
+
+/* About me section */
+.about-me {
+  display: flex;
+  padding-bottom: 42px;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 37em;
+  left: 9.2em;
+}
+.section-title {
+  color: aliceblue;
+  font-size: 35px;
+}
+.section-title ::after {
+  content: "❤";
+  display: block;
+  width: 300px;
+  margin-top: 39px;
+  height: 1px;
+  color: #000000;
+  margin-left: 20px;
+}
+
+/* About content */
+ul {
+  list-style: none;
+}
+.about-content {
+  display: flex;
+  position: absolute;
+  top: 41em;
+  left: 9em;
+}
+.about-description {
+  max-width: 600px;
+  color: #8892b0;
+  line-height: 1.5em;
+  font-size: 17px;
+}
+.about-description li {
+  position: relative;
+  left: -10px;
+  line-height: 1.5em;
+}
+.about-description ul ::before {
+  content: "▹";
+  color: #64ffda;
+  position: absolute;
+  left: -19px;
+  top: 1px;
+}
+.about-description p {
+  text-align: justify;
+}
+.tech-stack {
+  display: grid;
+  width: 300px;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+/* Achievement */
+
+.about-my-achievement {
+  display: flex;
+  padding-bottom: 42px;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: 54em;
+  left: 9.2em;
+}
+.about-achievement{
+    position: absolute;
+    top: 4em;
+    left: 0px;
+}
+.about-achievement-description {
+  max-width: 600px;
+  color: #8892b0;
+  align-items: center;
+  line-height: 1.5em;
+  font-size: 17px;
+}
+.about-achievement{
+    color: #8892b0;
+}
+.about-achievement a {
+  text-decoration: none !important;
+  color: #8892b0;
+}
+.about-achievement li ::before {
+  display: inline-flex;
+  content: "▹";
+  color: #64ffda;
+  position: relative;
+  left: -7px;
+  top: 1px;
+  justify-content: left;
+}
+.link-achievement {
+    display: grid;
+    width: 300px;
+    color: #8892b0;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+
+/* Achivement end */
+
+/* side nav */
+.sidevar-nav {
+  display: flex;
+  align-items: flex-end;
+  right: 0px;
+  padding: 2%;
+  bottom: 10%;
+  position: fixed;
+}
+.sizebar-links {
+  display: flex;
+  flex-direction: column;
+  color: #64ffda;
+  text-align: right;
+}
+.sizebar-links a{
+    text-decoration: none !important;
+    color: inherit;
+}
+.sidebar-logos {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  top: 8em;
+  left: 4.5em;
+}
+
+/* Copy right footer */
+footer{
+  display: flex;
+  top: 30vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.credits {
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  top: 1000px;
+}
+.credits-text {
+  text-align: center;
+}
